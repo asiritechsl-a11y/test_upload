@@ -1,0 +1,45 @@
+! Startup-config last modified at Sat Feb 14 01:35:44 2026 by root
+! device: R2 (cEOSLab, EOS-4.35.1F-45319759.4351F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$ELjngS.eKUe.XpAs$.He3FXU5QO..ZgnoB8/PHMqFgtfjCtQFOEr8.2z/2CDoWpihtUBvr/c1FIFDYbS/u3ritNN.Ln2O7S7dRogaU/
+!
+management api http-commands
+   no shutdown
+   !
+   vrf MGMT
+      no shutdown
+!
+no service interface inactive port-id allocation disabled
+!
+service routing protocols model multi-agent
+!
+hostname R2
+!
+spanning-tree mode mstp
+!
+system l1
+   unsupported speed action error
+   unsupported error-correction action error
+!
+vrf instance MGMT
+!
+management api gnmi
+   transport grpc default
+      vrf MGMT
+!
+management api netconf
+   transport ssh default
+      vrf MGMT
+!
+interface Management0
+   vrf MGMT
+   ip address 172.20.20.95/24
+!
+no ip routing
+no ip routing vrf MGMT
+!
+ip route vrf MGMT 0.0.0.0/0 172.20.20.1
+!
+end

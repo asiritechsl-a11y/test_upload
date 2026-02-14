@@ -23,41 +23,48 @@ topology:
   nodes:
     leaf1:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.11
     leaf2:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.12
     leaf3:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.13
     leaf4:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.14
     spine1:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.101
     spine2:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.102
     host1:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.91
     host2:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.92
+    host3:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.96
     R1:
       kind: ceos
-      image: ceos:4.33.2F
+      image: ceos:4.35.1F
       mgmt-ipv4: 172.20.20.93
-
+    R2:
+      kind: ceos
+      image: ceos:4.35.1F
+      mgmt-ipv4: 172.20.20.95
   links:
     - endpoints: ["leaf1:eth1", "leaf2:eth1"]
     - endpoints: ["leaf1:eth2", "leaf2:eth2"]

@@ -4,12 +4,12 @@
   tasks:
     - name: Add SSH keys
       arista.eos.eos_user:
-          name: tony
-          sshkey: ""
+          name: asiri
+          sshkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCc92HpesDBhMSMX6ctAL1pxH/vc7qWNZKCv4iL6A/igBYeyk/9oxixHNEYp9ZT3B4yTrc/gCbSzRF7hNYzAGNd3++R3/TuZTXRU4e/6eAAoEcxrI7ln+jS9fVxoMFclBkvTNWYvmrB+VDuD3aXwT25d2WVhKwhYBPGQWOsojxjao921J/kwiVAkDqJvpmG1V3zn4zvmmiVNMnLwgLZEj9ceIlcrBikKNWvT5fiD7r2zbGLRFxe2YX9uJ9HnRjQQV4OZEQoVB+4HjXXi4cV3B1dWBkdWpBWY4GZUVQjot8Izd8pAuUvgspl/rV/lBYKlb1+w2s7Hy+txU2buEQv239MgLmITZEaOc/WHgfYQmJAqBG9slitruS4GcpwHyXW7A2kyTPWvzzhsrEM3XNNsEYozSdWcspMx9vVgqqU6fIEuEBn3MfC4OvWtpVGRf3JoefKSl0c4rj8cG2EQSaPEbsMvygpDj/KaDowgIziNLpCsJXcalm1bXLoD87geKo/4G0= asiri@localhost.localdomain"
           state: present
     - name: Add user
       arista.eos.eos_user:
-        name: tony
+        name: asiri
         nopassword: true
         privilege: 15
         role: network-admin

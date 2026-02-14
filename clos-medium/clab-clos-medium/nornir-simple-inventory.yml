@@ -1,0 +1,56 @@
+---
+R1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.93
+R2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.95
+host1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.91
+host2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.92
+host3:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.96
+leaf1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.11
+leaf2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.12
+leaf3:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.13
+leaf4:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.14
+spine1:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.101
+spine2:
+    username: admin
+    password: admin
+    platform: ceos
+    hostname: 172.20.20.102
